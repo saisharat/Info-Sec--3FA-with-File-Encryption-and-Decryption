@@ -1,0 +1,114 @@
+.buttony {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+
+}
+<form class="" action="index.html" method="post">
+  <div class="buttony">
+    <div></div>
+  </div>
+</form>
+
+.buttonx {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+<div class="buttonx">
+  <div><input type="submit" name="" value="REGISTRATION"></div>
+</div>
+
+
+if($con->query($sql) == true){
+
+  $insert=true;
+  echo "<br>";
+
+
+}
+else{
+   echo "Error:<br> $con->error";
+}
+
+echo "<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<head>
+<meta charset='utf-8'>
+<title></title>
+</head>
+<body>
+<body style='Background-color: #77E4D4;'>
+<hr size='3' noshade>
+<h1><center> Login successful </center></h1>;
+<h1><center>3 LEVEL PASSWORD AUTHENTICATION SYSTEM</center></h1>
+<h2>USER AUTHENTICATION SYSTEM (Level2: Security Questions Check)</h2>
+<center>
+<p>Click here to answer your security question!</p>
+<button id = 'button' onclick = 'qscheck()'>
+Click here
+
+</button>
+<form action='qs1.php' method='post'>
+<p id='qs1' >
+
+
+</p>
+</form>
+<form action='qs2.php' method='post'>
+<p id = 'qs2' >
+
+</p>
+</form>
+<form action='qs3.php' method='post'>
+<p id = 'qs3' >
+
+</p>
+
+</form>
+</center>
+<script src='securityqs.js'></script>
+
+</body>
+</html> ";
+
+
+
+max-width: 80%;
+padding: 34px;
+
+
+style="Background-color: #EFEFEF;"
+
+.Endpage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+ style="Background-color: #9CC094;
+
+
+ <script >
+ function lengthRange(inputtxt,maxlength)
+ {
+    var userInput = inputtxt.value;
+    if(userInput.length == maxlength)
+       {
+         return true;
+       }
+    else
+       {
+ 	alert("Please" +maxlength+ " characters");
+         return false;
+       }
+ }

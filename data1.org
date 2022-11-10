@@ -1,0 +1,81 @@
+
+
+MODIFIED BY SHARAT FOR TESTING
+
+
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 25, 2022 at 05:09 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `cse3502proj`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userdetails`
+--
+
+CREATE TABLE `userdetails` (
+  `sno` int(5) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `birthday` date NOT NULL,
+  `number` varchar(15) NOT NULL,
+  `gender` varchar(15) NOT NULL,
+  `address` varchar(150) NOT NULL,
+  `vehicle` varchar(10) NOT NULL,
+  `lucky` varchar(10) NOT NULL,
+  `last` varchar(10) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `userdetails`
+--
+
+INSERT INTO `userdetails` (`sno`, `name`, `password`, `email`, `birthday`, `number`, `gender`, `address`, `vehicle`, `lucky`, `last`, `timestamp`) VALUES
+(1, '19BCB0109', '279ee689a59b915e3b6b4bfcb258627268bd8075060faf872d5acd0e8bf27531', 'sharatchandra.gubbala2019@vitstudent.ac.in', '1999-11-19', '7893618314', 'male', 'Hno: 4-2-516 police housing colony', 'nano', '199', '3', '2022-04-09 17:32:27'),
+(2, 'sharatg', '67dcbc68bd69041b184a78095290396416bf5ae8cf049bd2407ea4b7bba1a055', 'saisharat.gubbala@gmail.com', '2022-04-25', '7893618314', 'male', 'Khammam, 507002 Telangana', 'indica5754', '191', '3', '2022-04-25 07:36:16');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `userdetails`
+--
+ALTER TABLE `userdetails`
+  ADD PRIMARY KEY (`sno`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `userdetails`
+--
+ALTER TABLE `userdetails`
+  MODIFY `sno` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

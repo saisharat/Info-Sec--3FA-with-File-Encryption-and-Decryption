@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>USER_AUTHENTICATION_OPTIONS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <style media="screen">
+      * {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function Form() {
+        var selectvalue = $('input[name=link]:checked', '#Form').val();
+
+        if(selectvalue == "OTP&Imagepd")
+        {
+          window.open('http://localhost/cse3502proj/option1.html', '_self')
+          return true;
+        }
+
+        if(selectvalue == "OTP&sq")
+        {
+          window.open('http://localhost/cse3502proj/option2.html', '_self')
+          return true;
+        }
+
+        if(selectvalue == "sq&imagepd")
+        {
+          window.open("http://localhost/cse3502proj/option3.html", '_self')
+          return true;
+        }
+
+      }
+
+    </script>
+
+    <form id="Form">
+      <h1>Please Select your form of Authentication</h1>
+      <input type="radio" onclick="Form()" name="link" value="OTP&Imagepd">OTP and Image password
+      <input type="radio" onclick="Form()" name="link" value="OTP&sq">OTP and Security questions
+      <input type="radio" onclick="Form()" name="link" value="sq&imagepd">Security Questions and Image password
+
+    </form>
+
+  </body>
+</html>
